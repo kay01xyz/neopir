@@ -88,7 +88,7 @@
 
     layout(`
       <div class="progress-head">
-        <div><span class="tag">Part ${page + 1} / ${Math.ceil(questions.length / perPage)}</span><h1>你有幾同意以下描述？</h1></div>
+        <div><span class="tag">Part ${page + 1} / ${Math.ceil(questions.length / perPage)}</span><h1>你有多同意以下描述？</h1></div>
         <div class="progress-text" id="progress-count">${answered} / ${questions.length}</div>
       </div>
       <div class="progress"><div id="progress-bar" style="width:${answered / questions.length * 100}%"></div></div>
