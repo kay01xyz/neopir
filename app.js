@@ -34,7 +34,7 @@
   function tPosition(level) { return 10 + (level - 1) * 20; }
 
   function home() {
-    const title = document.documentElement.dataset.private === "true" ? "OCEAN參考" : "五大人格探索";
+    const title = document.documentElement.dataset.private === "true" ? "NEO-PI-R Personality Assessment" : "五大人格探索";
     const intro = document.documentElement.dataset.private === "true" ? "顯示五級分類" : "透過 240 條自我描述，探索五個主要人格向度。";
     const isComplete = questions.length > 0 && questions.every(q => validAnswer(answers[q.id]));
     const startLabel = isComplete ? "查看結果" : Object.keys(answers).length ? "繼續作答" : "開始";
